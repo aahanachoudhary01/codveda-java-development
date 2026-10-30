@@ -1,0 +1,3 @@
+Java is easy to learn.
+I am completing my Codveda internship.
+File handling is useful.
