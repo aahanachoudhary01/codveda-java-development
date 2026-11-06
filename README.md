@@ -1,115 +1,66 @@
 # Codveda Java Development Internship
 
-This repository contains my completed tasks for the Codveda Technology Java Development Internship.
+This repository contains six Java development tasks completed as part of the Codveda Technology Internship.
 
-## Level 1 – Basic Tasks
+## Level 1 – Basic Java Programming
 
-### Task 1: Basic Calculator
-**File:** `Level-1/Calculator.java`
+### 1. Calculator
+- Performs addition, subtraction, multiplication and division.
+- Uses methods and conditional statements.
+- Handles division by zero and invalid input.
 
-A console-based calculator that performs:
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Division-by-zero handling
-- Input validation
+### 2. Number Guessing Game
+- Generates a random number between 1 and 100.
+- Provides higher/lower hints.
+- Includes input validation and limited attempts.
 
-**Concepts:** Java methods, conditional statements, Scanner, exception handling.
+## Level 2 – Intermediate Java Programming
 
-### Task 2: Number Guessing Game
-**File:** `Level-1/NumberGuessingGame.java`
+### 3. Employee Management System
+- Uses Object-Oriented Programming concepts.
+- Supports adding, viewing, updating and deleting employee records.
+- Uses ArrayList for data storage.
 
-A console-based game in which the user guesses a randomly generated number between 1 and 100.
+### 4. File Handling
+- Reads data from a text file.
+- Counts lines, words and characters.
+- Writes results into an output file.
 
-**Features:**
-- Random number generation
-- Too High and Too Low hints
-- Limited attempts
-- Invalid input handling
+## Level 3 – Advanced Java Programming
 
-**Concepts:** Random class, loops, conditional statements, input validation.
+### 5. Library Management System
+- Built using Java, JDBC and MySQL.
+- Supports adding books and registering users.
+- Implements book borrowing and returning.
+- Maintains transaction records.
+- Uses SQL queries and database transactions.
 
-## Level 2 – Intermediate Tasks
-
-### Task 1: Employee Management System
-**File:** `Level-2/EmployeeManagementSystem.java`
-
-A Java application to manage employee records using Object-Oriented Programming and ArrayList.
-
-**Features:**
-- Add new employees
-- View all employee records
-- Update individual employee details (name, department, or salary)
-- Delete employees using employee ID
-- Prevent duplicate employee IDs
-- Validate user input
-
-**Concepts:** Classes, objects, encapsulation, ArrayList, CRUD operations, methods, exception handling.
-
-**Note:** Employee records are stored in memory and are not permanently saved after the program exits.
-
-### Task 2: File Handling
-**File:** `Level-2/FileHandling.java`
-
-A Java application that reads text from an input file, analyzes its contents, and generates an output report.
-
-**Features:**
-- Read data from `input.txt`
-- Count the number of lines
-- Count the number of words
-- Count characters (excluding line breaks)
-- Save the analysis report in `output.txt`
-- Handle file-related exceptions
-
-**Concepts:** Java File I/O, Files API, Lists, IOException, exception handling.
+### 6. Binary Search Tree
+- Implements insertion, searching and deletion.
+- Supports inorder, preorder and postorder traversal.
+- Handles deletion of nodes with zero, one or two children.
 
 ## Technologies Used
-
 - Java
-- JDK
-- Visual Studio Code
+- JDBC
+- MySQL
+- Maven
+- Git and GitHub
 
 ## How to Run
 
-### Level 1
+For standalone Java programs, compile and run using `javac` and `java`.
 
-**Calculator**
+For the Library Management System:
+1. Create the `codveda_library` database in MySQL.
+2. Configure the database password using the `DB_PASSWORD` environment variable.
+3. Navigate to the LibraryManagementSystem folder.
+4. Run:
+
 ```bash
-cd Level-1
-javac Calculator.java
-java Calculator
+mvn clean compile
+mvn exec:java
 ```
 
-**Number Guessing Game**
-```bash
-cd Level-1
-javac NumberGuessingGame.java
-java NumberGuessingGame
-```
-
-### Level 2
-
-**Employee Management System**
-```bash
-cd Level-2
-javac EmployeeManagementSystem.java
-java EmployeeManagementSystem
-```
-
-**File Handling**
-```bash
-cd Level-2
-javac FileHandling.java
-java FileHandling
-```
-
-Make sure `input.txt` is present inside the `Level-2` directory before running FileHandling.
-
-## Internship Details
-
-- Organization: Codveda Technology
-- Domain: Java Development
-- Completed: Level 1 and Level 2
-- Total tasks completed: 4
-
+## Internship Work
+Completed six Java development tasks across three levels.
